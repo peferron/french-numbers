@@ -1,4 +1,5 @@
 const container = document.body;
+const lang = 'fr-FR';
 
 function $(selector) {
     return container.querySelector(selector);
@@ -27,7 +28,7 @@ function generateTime() {
 function generatePrice() {
     const integer = random(1, 999);
 
-    if (random(0,1)) {
+    if (random(0, 1)) {
         return integer + '€';
     }
 
