@@ -1,0 +1,73 @@
+html {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 150%;
+}
+
+body {
+    text-align: center;
+}
+
+button {
+    background: #388E3C;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 100;
+}
+
+input {
+    padding: 10px 20px;
+    border: 0;
+    text-align: center;
+    font-weight: 300;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.result, .solution {
+    position: relative;
+}
+
+.result__ok-nok, .solution__number {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    padding-left: 0.5rem;
+}
+
+.result__ok, .result__nok, .solution__number {
+    display: none;
+    white-space: nowrap;
+}
+
+.result--ok .result__ok, .result--nok .result__nok, .solution--show .solution__number {
+    display: block;
+}
+
+.result__ok {
+    color: #388E3C;
+}
+
+.result__nok {
+    color: #B71C1C;
+}
+
+input, button, .exemples {
+    width: 300px;
+    box-sizing: border-box;
+    margin-top: 1rem;
+}
+
+.exemples {
+    display: inline-block;
+    font-size: 0.8em;
+    color: #888;
+}
+
+ul {
+    text-align: left;
+}
