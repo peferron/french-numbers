@@ -11,7 +11,7 @@ function random(min, max) {
 function pad(number, minLength) {
     const str = number.toString();
     const missing = minLength - str.length;
-    return missing > 0 ? ' '.repeat(missing) + str : str;
+    return missing > 0 ? '0'.repeat(missing) + str : str;
 }
 
 function generateYear() {
