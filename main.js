@@ -39,7 +39,7 @@ function generatePrice() {
 function generateNumber() {
     const r = random(0, 99);
 
-    if (r < 25) {
+    if (r < 20) {
         return generateYear();
     }
 
@@ -47,11 +47,11 @@ function generateNumber() {
         return generateTime();
     }
 
-    if (r < 75) {
+    if (r < 80) {
         return generatePrice();
     }
 
-    return random(0, 100000);
+    return random(0, 110000);
 }
 
 function speak() {
